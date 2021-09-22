@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #c1c1c1;
+            
+        }
+        .container{
+            padding: 10px;
+            text-align: center;            
+            justify-content: center;            
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .row{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;            
+            align-items: center;          
+        }
+        .column{
+            border: 5px solid red;            
+            display: inline-block;            
+            padding: 10px;              
+            border-radius: 10%;    
+            background-color: black;                 
+            color: white;
+        }
+        
+
+        .formarea{
+            border: 5px dashed red;
+            padding: 10px;
+            font-weight: 700;
+            background-color: blanchedalmond;
+            color:teal;        
+        }
+        
+        td{
+            font-size: 16px;
+            text-align: left;
+        }
+        .circle{
+            border: 2px solid red;
+            border-radius: 100%;
+            background-color: aqua;
+            padding: 20px;
+            text-transform: uppercase;                        
+        }
+
+        .title{
+            background: black;
+            color: white;
+            border: 2px solid red;
+            border-radius: 30px;
+            padding: 10px;
+            margin: 0% 40%;            
+            font-size: 1.5rem;
+            text-align: center;
+            font-style: oblique;
+        }
+      
+        .menu{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin: 1%;
+            align-items: center;
+        }
+
+        .items{                    
+            border-radius: 10%;
+            border: 2px solid red;
+            color: black;
+            background-color: aqua;
+            width: 300px;
+        }
+        .menu ul{
+            list-style: none;
+            text-align: left;            
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h3>Welcome to Dhaba</h3>
+            </div>
+            <div class="column">
+                <h3>Home / Menu / Review</h3>
+            </div>
+            <div class="column">
+                <p>Welcome to Dhaba</p>
+                <p>For a Complaint Contact: @@@@@@@@@@</p>
+            </div>           
+        </div> 
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="middle">
+                <div class="circle">
+                    <h2>Exiciting Offers</h2>    
+                    <hr/>
+                    <p>get our special thali for only rs 100 only on monday</p>
+                    <hr/>
+                    <p>Please rate us out of 5</p>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="formarea">
+                    <h2>Please Register here</h2>
+                    <hr/>
+                    <form>
+                        <table>
+                            <tr>
+                                <td><label for="firstname">First Name</label></td>
+                                <td><input type="text" id="firstname"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="lastname">Last Name</label></td>
+                                <td><input type="text" id="lastname"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="age">Your Age</label></td>
+                                <td><input type="text" id="age"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email</label></td>
+                                <td><input type="text" id="email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="dob">Date of Birth</label></td>
+                                <td><input type="text" id="dob"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="notsingle">Are you more than one person?</label></td>
+                                <td><input type="text" id="notsingle"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="patient">Do you have cough or cold?</label></td>
+                                <td><input type="text" id="patient"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit"><input type="reset"></td>
+                            </tr>
+                        </table>                    
+                    </form>
+                </div>
+            </div>        
+        </div>    
+    </div>
+    <div class="container">
+        <h2 class="title">Menu</h2>        
+        <div class="row">
+            <div class="menu">
+                <div class="items">
+                    <h3>Starter</h3>
+                    <hr/>
+                    <ul>
+                        <li>paneer tikka</li>                        
+                        <li>Tomato Soup</li>
+                        <li>Afghani Chaap</li>
+                        <li>Veg Raita</li>
+                        <li>Gol Gappa</li>
+                        <li>Tkki</li>
+                        <li>Fried Rice</li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="menu">
+                <div class="items">
+                    <h3>South Indian</h3>
+                    <hr/>
+                    <ul>
+                        <li>masala dosa</li>
+                        <li>Tomato Soup</li>
+                        <li>Afghani Chaap</li>
+                        <li>Veg Raita</li>
+                        <li>Gol Gappa</li>
+                        <li>Tkki</li>
+                        <li>Fried Rice</li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="menu">
+                <div class="items">
+                    <h3>Indian Kitchen</h3>
+                    <hr/>
+                    <ul>
+                        <li>Sahi Paneer</li>                        
+                        <li>Tomato Soup</li>
+                        <li>Afghani Chaap</li>
+                        <li>Veg Raita</li>
+                        <li>Gol Gappa</li>
+                        <li>Tkki</li>
+                        <li>Fried Rice</li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="menu">
+                <div class="items">
+                    <h3>Rice & Salad</h3>
+                    <hr/>
+                    <ul>
+                        <li>plain rice</li>                        
+                        <li>Tomato Soup</li>
+                        <li>Afghani Chaap</li>
+                        <li>Veg Raita</li>
+                        <li>Gol Gappa</li>
+                        <li>Tkki</li>
+                        <li>Fried Rice</li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="menu">
+                <div class="items">
+                    <h3>Tandoori Bread</h3>
+                    <hr/>
+                    <ul>
+                        <li>butter roti</li>                        
+                        <li>Tomato Soup</li>
+                        <li>Afghani Chaap</li>
+                        <li>Veg Raita</li>
+                        <li>Gol Gappa</li>
+                        <li>Tkki</li>
+                        <li>Fried Rice</li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="menu">
+                <div class="items">
+                    <h3>Beverages and Other</h3>
+                    <hr/>
+                    <ul>
+                        <li>Cold Cofee</li>                        
+                        <li>Tomato Soup</li>
+                        <li>Afghani Chaap</li>
+                        <li>Veg Raita</li>
+                        <li>Gol Gappa</li>
+                        <li>Tkki</li>
+                        <li>Fried Rice</li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
