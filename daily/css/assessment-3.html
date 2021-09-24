@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(45deg,red,yellow);
+        }
+        .container{
+            
+            margin: 0 10%;
+        }
+        .card{
+             border: 2px solid red;
+             background: radial-gradient(circle, white,green);
+             font-weight: 700;
+             padding: 10px;             
+             box-shadow: 5px 5px purple;
+
+        }
+        .top{
+            position: relative;
+            text-align: center;
+            left: 40%;
+            width: 20%;
+            
+            
+        }
+        .fixed{
+            position: fixed;
+            bottom: 0;
+            left: 40%;
+        }
+        .item{
+            width: 20%;
+            position: absolute;
+        }
+        .middle{
+            text-align: center;
+            margin: 0 20%;
+            border: 5px solid violet;
+        }
+        .half{
+            display: inline-block;            
+            padding: 10px;              
+            width: 100%;
+        }
+        .row{
+            display: flex;                       
+            align-items: center;  
+        }
+        p{
+            padding: 10px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card top">
+            <p>Welcome to  All-in-one General Store</p>
+        </div>
+        <div class="card fixed">
+            <div class="row">
+                <p>Exciting offer only on monday</p>
+                <p>Get Discount upto 10%</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="position: relative; height: 200px;">
+        <div class="card item" style="left: 0; top: 0">
+            Address: B-145 near Delhi Public School
+        </div>
+        <div class="card item" style="right: 0; top: 0">
+             <img src="" width="100" height="50">   
+        </div>
+        <div class="card item" style="left: 0; bottom: 0">
+            We serve our best to you
+        </div>
+        <div class="card item" style="right: 0; bottom: 0">        
+            Please rate us!
+            <form>
+                <label>Rate us</label>
+                <input type="text">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="middle">
+            <h2>Welcome to my store</h2>
+            <div class="row">
+                <div class="card half">
+                    <h2>Fruits</h2><hr/>
+                    <p>Banana, Mango, Orange, Watermelon</p>
+                </div>            
+                <div class="card half">
+                    <h2>Vegetables</h2><hr/>
+                    <p>Banana, Mango, Orange, Watermelon</p>
+                </div>
+            </div>  
+            <div class="card full">
+                <h2>Other items</h2>
+                <hr/>
+                <p>Banana, Mango, Orange, Watermelon</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
