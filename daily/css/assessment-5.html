@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #ccc;
+        }
+        .container{
+            text-align: center;
+            width: 100%;            
+            position: relative;
+            padding-top: 5%;
+            height: 80vh;
+            
+        }
+        .row{
+            margin: 0 10%;
+            padding: 10px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            display: inline-block;
+            transition: transform 1s ease-in;
+        }
+        .row:nth-child(1)>.box{            
+            animation: skew 5s linear infinite alternate;
+        }
+        .row:nth-child(2)>.box{            
+            animation: skewY 5s linear infinite alternate;
+        }
+        .row:nth-child(3)>.box{            
+            animation: rotate 5s linear infinite alternate;
+        }
+        .row:nth-child(4)>.box:nth-child(1){                        
+            animation: animate1 2s linear infinite alternate;
+        }
+        .row:nth-child(4)>.box:nth-child(2){                        
+            animation: animate2 2s infinite alternate running;
+        }
+        .row:nth-child(4)>.box:nth-child(3){            
+            animation: animate3 2s linear infinite alternate;
+        }
+
+        @keyframes animate1{
+            100%{
+                transform: rotateX(60deg);
+            }
+        }
+
+        @keyframes animate2{
+            100%{
+                transform: rotateY(60deg);
+            }
+        }
+        @keyframes animate3{
+            100%{
+                transform: rotateZ(-90deg);
+            }
+        }
+        @keyframes skew{
+            0%{
+                transform: skew(20deg);
+            }
+            100%{
+                transform: skew(-20deg);
+            }
+        }
+        @keyframes skewY{
+            0%{
+                transform: skewY(20deg);
+            }
+            100%{
+                transform: skewY(-20deg);
+            }
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        
+        .bar{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;          
+        }
+        .bar1{transition: width 1s ease-in;}
+        .bar1:hover{width: 300px;}
+        .bar2{transition:width 1s ease-in, height 1s ease-in;}
+        .bar2:hover{width: 300px; height: 300px;}
+        .bar3{transition: width 1s linear;}
+        .bar3:hover{ width: 300px;}
+        .bar4{transition: width 1s ease;}
+        .bar4:hover{ width: 300px;}
+        .bar5{transition: width 1s ease-in;}
+        .bar5:hover{ width: 300px;}
+        .bar6{transition: width 1s ease-in-out;}
+        .bar6:hover{ width: 300px;}
+        .bar7{transition: width 1s ease-out;}
+        .bar7:hover{ width: 300px;}
+        
+        .animation{        
+            position: relative;                        
+            height: 100vh;
+            text-align: center;
+            
+            background-image: url(sky.jpg);
+            margin-top: 10%;            
+        }
+        .vehicle{            
+            left: 40%;
+            bottom: 78px;      
+            position: absolute;
+            z-index: 2;
+            animation: car 1s infinite linear;                            
+        }
+        .vehicle .car{width: 450px;}
+        .vehicle .wheel{             
+            position: absolute;           
+            width: 80px;
+            animation: rotate 3s infinite linear; 
+            bottom: 20px;            
+        }
+        .vehicle .wheel1{left: 9%; }
+        .vehicle .wheel2{right: 12%;}        
+        .city, .road{
+            width: 250%;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            display: block;
+            position: absolute;         
+            background-repeat:repeat-x;            
+            animation: motion 5s infinite linear; 
+        }
+        .city{            
+            height: 250px;
+            bottom: 200px;            
+            background-image: url(city.png);            
+        }
+        .road{
+            bottom: 0;     
+            height: 30vh;
+            background-image: url(road.jpg);            
+        }
+        
+        @keyframes car {
+            100%{
+                transform: translateY(-1px);
+            }50%{
+                transform: translateY(-2px);
+            }0%{
+                transform: translateY(-1px);
+            }
+        }
+
+        @keyframes rotate{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes motion {
+            100%{
+                transform: translateX(-1000px);
+            }
+        }
+        .menubar{
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: black;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            z-index: 3;
+        }
+        .menubar a{
+            text-decoration: none;
+            color: white;
+            padding: 5px 20px;
+            background-color: blue;
+            border-radius: 5px;
+        }
+        .header-row{
+            margin: 5px 50px;
+            display: flex;
+            align-items: center;            
+            justify-content:space-between;
+        }
+        
+    </style>
+</head>
+<body>
+    <p  id="screen1"></p>
+    <div class="menubar">
+        <a href="#screen1">Screen 1</a>
+        <a href="#screen2">Screen 2</a>
+        >
+    </div>    
+    
+    <div class="header-row">            
+        <div class="container">
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="container">
+            <ol>
+                <li class="bar bar1">Increasing Width to: 300px</li>
+                <li class="bar bar2">Increasing Width & Height to: 300px</li>
+                <li class="bar bar3">Using Linear Timing-Function.</li>
+                <li class="bar bar4">Using Ease Timing-Function.</li>
+                <li class="bar bar5">Using Ease-in Timing-Function.</li>
+                <li class="bar bar6">Using Ease-out Timing-Function.</li>
+                <li class="bar bar7">Using Ease-in-out Timing-Function.</li>
+            </ol> 
+        </div>    
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <div class="animation" id="screen2">
+        <h1 class="heading">Happy Independence Day</h1>
+        <div class="vehicle">            
+            <img src="car.png" class="car">
+            <img src="wheel.png" class="wheel wheel1">
+            <img src="wheel.png" class="wheel wheel2">
+        </div>
+        <div class="city"></div>
+        <div class="road"></div>        
+    </div>
+
+</body>
+</html>
