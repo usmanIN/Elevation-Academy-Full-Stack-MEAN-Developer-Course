@@ -188,44 +188,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
 <body>
-    <span id="top"></span>
-    <div class="container">
-        <br/>
-        <div class="heading">
-            <div class="column">
-                <h1><strong>Tasks</strong> <span style="color: #b7b7b7;">Lists</span> </h1>
-            </div>
-            <div class="column">
-                <a href="#model"> <i class="fas fa-plus-circle"></i> Add List</a>
-            </div>
-        </div>
-        <br/><br/>
-        <div class="card">
-            <a href="page.html#nextpage"><h2>Trip to Paris</h2></a>
-            <div class="card-content">
-                <hr/>
-                <p class="status">Completed Task</p>            
-                <p><input type="checkbox"> Pending Task</p>
-            </div>
-        </div>
-        <div class="card">
-            <a href="page.html#nextpage"><h2>Work Done</h2></a>
-            <div class="card-content">
-                <hr/>
-                <p class="status">Completed Task</p>            
-                <p><input type="checkbox"> Pending Task</p>
-            </div>
-        </div>
-        <div class="card">
-            <a href="page.html#nextpage"><h2>My Todo List</h2></a>
-            <div class="card-content">
-                <hr/>
-                <p class="status">Completed Task</p>            
-                <p><input type="checkbox"> Pending Task</p>
-            </div>
-        </div>
     
-    </div>
     <a href="#">
     <div class="model" id="model">        
         <div class="content">
@@ -235,5 +198,28 @@
         </div>
     </div>
 </a>
+    <div id="nextpage">
+        <div class="container" >
+            <div class="mob-head">
+                <div class="mob-col">
+                    <span class="header"> Trip to Paris</span></h1>
+                </div>
+                <div class="mob-col">
+                    <a href="index.html#top"><i class="fas fa-arrow-circle-left"></i></a> Back
+                </div>
+            </div>
+            <br/>
+            <div class="card">
+                <h2>Trip to Paris</h2>
+                <hr/>
+                <p class="status">Completed Task</p>            
+                <p><input type="checkbox"> Pending Task</p>
+                <br/><br/><br/>
+                <p>
+                    <a href="#model" class="moreAdd"> <i class="fas fa-plus-circle"></i></a>
+                </p>                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
