@@ -20,15 +20,18 @@ setInterval(function(){
     }
 
     if(timer[0] == hours){
+        document.getElementsByClassName("partyButton")[0].innerHTML = "TIME TO WAKE UP !!"; 
         image.setAttribute("src","2.jpg");        
     }else if(timer[1] == hours){        
+        document.getElementsByClassName("partyButton")[0].innerHTML = "LET'S HAVE SOME LUNCH !!"; 
         image.setAttribute("src","1.jpg");        
     }else if(timer[2] == hours){
+        document.getElementsByClassName("partyButton")[0].innerHTML = "TIME TO SLEEP - GOOD NIGHT!!"; 
         image.setAttribute("src","3.jpg");        
     }else{
         image.setAttribute("src","moon.png");   
     }
-    
+    hours = hours > 12 ? hours - 12 : hours;
     document.getElementById("hours").innerHTML = hours < 10 ? '0'+ hours : hours;
     document.getElementById("minute").innerHTML = minutes < 10 ? '0'+ minutes : minutes;
     document.getElementById("seconds").innerHTML = seconds < 10 ? '0'+ seconds : seconds;
