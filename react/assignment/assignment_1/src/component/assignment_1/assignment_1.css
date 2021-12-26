@@ -1,0 +1,28 @@
+
+.d-flex{ margin: 0 10%;}
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #cc3030;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+}
+.classbox{
+    padding: 10px 20px;
+    border: 1px solid #201616;
+    background-color: rgb(161, 209, 207);
+    width: 40%;
+}
+.body{
+    position: absolute;
+    top:0;
+    background: linear-gradient(#27bd3b,#2371b9);
+    width: 100%;
+    height: 100%;
+}
+h1{
+    color: white;
+}
