@@ -28,8 +28,8 @@ class Assignment_1 extends Component{
         return(
             <div className="body">
                 <h1>Styling using functional and class component</h1>
-                <button onClick={this.changeFunction}>Functional Component</button>
-                <button onClick={this.changeClass}>Class Component</button>
+                <button onClick={this.changeFunction} className='button'>Functional Component</button>
+                <button onClick={this.changeClass} className='button'>Class Component</button>
 
                 <div className='d-flex'>
                     { this.state.IsFunctional?<FunctionComponent />:null}
