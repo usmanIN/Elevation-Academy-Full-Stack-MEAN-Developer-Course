@@ -3,7 +3,7 @@ import FunctionComponent from './FunctionalComponent'
 import ClassComponent from './ClassComponent'
 import './assignment_1.css';
 
-class Header extends Component{
+class Assignment_1 extends Component{
     constructor(props){
         super(props)
         this.state = {
@@ -42,4 +42,4 @@ class Header extends Component{
 
 
 
-export default Header;
+export default Assignment_1;

@@ -4,7 +4,7 @@ import ShowTable from './showTable';
 import style from './assignment_2.module.css'
 
 
-class Page extends Component{
+class Assignment_2 extends Component{
     constructor(){
         super();
         this.state = {
@@ -58,7 +58,7 @@ class Page extends Component{
                     <form onSubmit={this.submitData} className={style.form}>
                         <input type="text" name="name" value={this.state.name} onChange={this.handleData} placeholder='Name'/>
                         <input type="text" name="department" value={this.state.department}  onChange={this.handleData} placeholder='Department'/>
-                        <input type="text" name="rating" value={this.state.rating}  onChange={this.handleData} placeholder='Rating'/>
+                        <input type="number" name="rating" value={this.state.rating}  onChange={this.handleData} placeholder='Rating'/>
                         <input type="submit"/>
                     </form>                            
                 </div>
@@ -71,4 +71,4 @@ class Page extends Component{
     }
 }
 
-export default Page;
+export default Assignment_2;
