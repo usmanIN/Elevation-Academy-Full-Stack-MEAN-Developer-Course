@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+        <style>
+            .box{
+                width:100px;
+                height: 100px;
+                background: red;
+                transition: 1s;
+                display: inline;
+                padding: 10px;
+                margin: 10px;
+            }
+            .box:hover{
+                width: 200px;
+            }
+            @media screen and (max-width: 500px) {
+                .box{
+                    display: block;
+                }                
+            }
+        </style>
+    </head>
+   <!-- <div class="box">
+    text 1
+   </div>
+   
+   <div class="box">
+    text 2
+</div>
+
+<div class="box">
+    Text 3
+</div> -->
+
+<!-- 
+    <ul type="circle">
+        <li>list 1</li>
+        <li>list 1</li>
+        <li>list 1</li>
+    </ul> -->
+<!-- 
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        
+        <tr>
+            <td>Rahul</td>
+            <td>35</td>
+        </tr>
+        
+        <tr>
+            <td>My name Rahul</td>
+            <td>My age 35</td>
+        </tr>
+    </table> -->
+
+
+    <!-- <form method="get">
+        <input type="text" name="myname">
+        <input type="text" name="myage">
+        <input type="submit">
+    </form> -->
+
+
+
+
+
+<h1 id="textHide">Hello</h1>
+<button id="button">Hide</button>
+
+
+<script type="text/javascript">
+
+    document.getElementById("button").addEventListener("click",function(){
+        document.getElementById("textHide").style.display = (document.getElementById("textHide").style.display == "block") ? "none":"block";
+        this.innerHTML = (document.getElementById("textHide").style.display == "block") ? "Hide":"Show";
+    });
+
+
+</script>
+    </body>
+</html>

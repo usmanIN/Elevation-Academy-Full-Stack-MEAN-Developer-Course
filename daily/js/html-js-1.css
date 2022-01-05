@@ -1,0 +1,11 @@
+.row{
+    display: flex;
+}
+
+.row .card{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    padding: 10px 20px;
+    margin: 10px;
+}
