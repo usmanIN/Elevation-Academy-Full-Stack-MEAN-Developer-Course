@@ -18,6 +18,9 @@
 .table tr:nth-child(even){background-color: #f2f2f2;}
 
 .area{    margin: 0 10%;    }
+.MainContent{
+    height: 100vh;
+}
 
 .page{
     display: grid;

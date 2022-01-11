@@ -1,28 +1,74 @@
-import React, { Component } from 'react'
-import { BrowserRouter, Router, Route } from 'react-router-dom';
-import Home from './Home';
-import Contact from './Contact';
-import List from './List';
+import React, { Component } from "react";
+import style from './assignment_2.module.css'
+import {Link} from 'react-router-dom';
 
 class Assignment_4 extends Component{
-    constructor(){
-        super();
-    }    
-
+    
     render(){
-
+        const data = [
+    
+            {
+            name : "John",
+            age : 26,
+            course : "MERN",
+            batch : "October"
+          },
+          {
+            name : "Doe",
+            age : 25,
+            course : "MERN",
+            batch : "November"
+          },
+          {
+            name : "Biden",
+            age : 26,
+            course : "MERN",
+            batch : "September"
+          },
+          {
+            name : "Barar",
+            age : 22,
+            course : "Christ",
+            batch : "September"
+          },
+          {
+            name : "Elent",
+            age : 23,
+            course : "MERN",
+            batch : "October"
+          }
+    ]
         return(
-            <div>
-                <BrowserRouter>
-                    <Router>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/list" element={<List />} />
-                        <Route path="/contact" element={<Contact />} />
-                    </Router>
-                </BrowserRouter>
-            </div>
+            <>
+                <div className={style.area}>
+            <table className={style.table}>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                        <th>Batch</th>
+                        <th>Action</th>
+                    </tr>    
+                </thead>
+            <tbody>
+                {
+                    data.map((item,i) =>(
+                        <tr key={i}>
+                            <td>{item.name}</td>
+                            <td>{item.age}</td>
+                            <td>{item.course}</td>                        
+                            <td>{item.batch}</td>
+                            <td><Link to={`edit/${i}`}>Edit</Link></td>
+                        </tr>
+                    ))
+                }
+            </tbody>
+            </table>
+        </div>
+            </>
         )
     }
 }
 
-export default Assignment_4;
+export default Assignment_4
