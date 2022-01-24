@@ -1,6 +1,21 @@
-.App {
-  text-align: center;
+
+.small-screen{
+  display: none ;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .small-screen{
+    display: block;
+  }
+  .large-screen{
+    display: none;
+  }
+  .small-row-column{
+    flex-direction: column;
+  }
+}
+
 
 .App-logo {
   height: 40vmin;

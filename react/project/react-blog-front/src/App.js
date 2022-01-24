@@ -4,6 +4,8 @@ import {BrowserRouter, Routes, Route ,Navigate} from 'react-router-dom';
 import Home from './component/pages/Home';
 import List from './component/pages/List';
 import Post from './component/pages/Post';
+import {Record} from './component/context/contentAPI';
+import './App.css';
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
     <div className="App">
       
       <BrowserRouter>
+      <Record>
         <Header />        
           <Routes>
             <Route exact path="/" element={<Home />} />
@@ -22,7 +25,7 @@ function App() {
               </div>
             </>)} />       
           </Routes>
-
+          </Record>
       </BrowserRouter>
 
 
