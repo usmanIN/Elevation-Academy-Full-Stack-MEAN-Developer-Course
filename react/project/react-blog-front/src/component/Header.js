@@ -41,7 +41,8 @@ function Header(){
         }
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark small-screen">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">The Siren</a>
+                <Link to="/" className="navbar-brand" >The Siren</Link>
+                
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span className="navbar-toggler-icon"></span>
                 </button>
