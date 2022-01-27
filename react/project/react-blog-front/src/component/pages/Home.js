@@ -12,6 +12,7 @@ function Home(){
             <div className="container  my-3">
                 <div className='row'>
                     <div className='col-lg-8'>
+
                         <h1 className=''>The Sound cloud you loved is doomed</h1>
                     </div>
                     <div className='col-lg-4 d-flex flex-column'>
@@ -26,7 +27,7 @@ function Home(){
                 <div className='d-flex justifiy-content-start small-row-column'>
                     {
                         record.slice(0,3).map( (item, index) => <div className='card card mx-2' key={index}>
-                        <img src="" alt={item.title} />                        
+                        <img src={image} alt={item.title} />                        
                         <div className="card-body">
                             <h4 className="card-title">
                                 <Link to={item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>
