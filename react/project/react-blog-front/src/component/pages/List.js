@@ -19,7 +19,7 @@ function List(){
                         <div className=' d-flex flex-column'>
                             {
                                 record.map(function(item,index){
-                                    if(item.category.toLowerCase()==topicName.toLowerCase()){
+                                    if(item.category.toLowerCase()===topicName.toLowerCase()){
                                         return (<div className='row mb-3' key={index}>
                                             <div className='col-lg-4'>
                                                 <img src={image} alt='demo' />                                    
@@ -33,6 +33,7 @@ function List(){
                                             </div>
                                         </div>)                                
                                     }
+                                    return "";
                                 }
                                 )
                             }
