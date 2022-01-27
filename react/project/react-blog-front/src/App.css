@@ -1,9 +1,37 @@
+.image-main{
+  background-size: cover;  
+  background-position: center;
+}
+.main-div{
+  background-image: url('component/download.jpg');
+  background-color: #cccccc;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main-text {
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: white;
+}
+img{
+  width: 100%;
+}
+
 
 .small-screen{
   display: none ;
 }
+@media only screen and (min-width: 600px) {
+  .post-image{
+    height: 500px;
+  }
 
-
+}
 @media only screen and (max-width: 600px) {
   .small-screen{
     display: block;

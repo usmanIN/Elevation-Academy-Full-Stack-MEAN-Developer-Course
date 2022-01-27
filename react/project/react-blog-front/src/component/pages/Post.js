@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-
+import image from '../download.jpg';
 import { useParams , Link} from 'react-router-dom';
 import {ContentAPI} from '../context/contentAPI';
-
+import '../../App.css';
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
@@ -37,7 +37,7 @@ function Post(){
                     <div className='col-lg-2'></div>                    
                     <div className='col-lg-8'>
                         <h1>{content.title}</h1>            
-                        <img src='' alt='demo image' style={{width:"100%", height:"100px"}} />
+                        <img src={image} alt='demo image' className='post-image'/>
                         <p>{content.description}</p>                            
                     </div>                        
                     <div className='col-lg-2'></div>
@@ -45,13 +45,13 @@ function Post(){
             </div>
             <div className='mx-auto container'>
                 <h4>More from the siren</h4>
-                <div className='d-flex justify-content-start small-screen'>
+                <div className='d-flex justify-content-start small-row-column'>
                     {
                         shuffle(similar).slice(0,3).map(function(item,index){
                                 return (
                                     <div className='card mx-2' key={index}>
                                         <div className='card-body'>
-                                            <img src='' alt={item.title}/>
+                                            <img src={image} alt={item.title} style={{width:"100%", height:"50%"}} />
                                             <h4 className='card-text'>
                                                 <Link to={"/"+item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>
                                             </h4>

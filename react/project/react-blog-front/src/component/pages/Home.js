@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import {ContentAPI} from '../context/contentAPI';
 import { Link} from 'react-router-dom';
 import image from '../download.jpg';
+import '../../App.css';
 function Home(){
     const [record] = useContext(ContentAPI);
 
@@ -12,12 +13,25 @@ function Home(){
             <div className="container  my-3">
                 <div className='row'>
                     <div className='col-lg-8'>
-
-                        <h1 className=''>The Sound cloud you loved is doomed</h1>
+                        <div className='card'>
+                            <img src={image} alt="demo" />
+                            <div className='card-img-overlay'>
+                                <h2 className='main-text'>The Sound cloud you loved is doomed</h2>
+                            </div>
+                        </div>
+                        
                     </div>
                     <div className='col-lg-4 d-flex flex-column'>
-                        <h1 className=''>The Sound cloud you loved is doomed</h1>
-                        <h1 className=''>The Sound cloud you loved is doomed</h1>
+                        <div className='main-div mb-3'>
+                            <div className='main-text'>
+                                <p>The Sound cloud you loved is doomed</p>
+                            </div>
+                        </div>
+                        <div className='main-div'>
+                            <div className='main-text'>
+                                <p>The Sound cloud you loved is doomed</p>
+                            </div>
+                        </div>
                     </div>
                 </div>            
             </div>
@@ -47,14 +61,22 @@ function Home(){
                 <div className='row'>
                     <div className='col-lg-8 d-flex flex-column'>
                     {
-                        record.slice(0,10).map( (item, index) => <div className='card' key={index}>                        
-                        <img src="" alt={item.title} />                        
-                        <div className="card-body">
-                            <h4 className="card-title">
-                                <Link to={item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>                     
-                            </h4>
-                            <p className="card-text">{item.description.split(" ").slice(0,20).join(" ")}.</p>                            
+                        record.slice(0,10).map( (item, index) => <div className='card' key={index}>           
+                        <div className='row'>
+                            <div className='col-lg-4'>
+                            <img src={image} className='img-thumbnail' alt={item.title} />                        
+                            </div>
+                            <div className='col-lg-8'>
+                                <div className="card-body">
+                                    <h4 className="card-title">
+                                        <Link to={item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>                     
+                                    </h4>
+                                    <p className="card-text">{item.description.split(" ").slice(0,20).join(" ")}.</p>                            
+                                </div>                                
+                            </div>
                         </div>
+                        
+
                     </div>)
                     }
 
@@ -94,7 +116,7 @@ function Home(){
                 <div className='d-flex justifiy-content-start small-row-column'>
                 {
                         record.slice(0,3).map( (item, index) => <div className='card mx-2' key={index}>                        
-                        <img src="" alt={item.title} />                        
+                        <img src={image} alt={item.title} />                        
                         <div className="card-body">
                             <h4 className="card-title">
                             <Link to={item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>

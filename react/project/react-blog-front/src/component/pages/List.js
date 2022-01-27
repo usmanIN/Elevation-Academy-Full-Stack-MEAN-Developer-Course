@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import {ContentAPI} from '../context/contentAPI';
-
+import image from '../download.jpg';
 import { useParams , Link} from 'react-router-dom';
-
+import '../../App.css';
 function List(){
 
     const {topicName} = useParams();
@@ -22,7 +22,7 @@ function List(){
                                     if(item.category.toLowerCase()==topicName.toLowerCase()){
                                         return (<div className='row mb-3' key={index}>
                                             <div className='col-lg-4'>
-                                                <img src='' alt='demo' />                                    
+                                                <img src={image} alt='demo' />                                    
                                             </div>
                                             <div className='col-lg-8'>
                                                 <h4>
@@ -46,7 +46,8 @@ function List(){
                                 if(index < 1){
                                     return (<div className='card' key={index}>                        
                                     <div className="card-body">
-                                        <img src='' alt={item.title} />
+                                        <img src={image} style={{width:"100%"}} className='mb-3' alt={item.title} />
+
                                         <h5 className="card-title">
                                             <Link to={"/"+item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>                     
                                         </h5>
