@@ -1,12 +1,15 @@
 import React, { useContext } from 'react';
 import {ContentAPI} from '../context/contentAPI';
 import { Link} from 'react-router-dom';
-import siteIcon from '../download.jpg';
 import '../../App.css';
+
 function Home(){
     const [record] = useContext(ContentAPI);
 
-    //console.log(record[0]);
+    let num = Math.floor(Math.random() * record.length);
+    let first = Math.floor(Math.random() * record.length);
+    let second = Math.floor(Math.random() * record.length);
+    
     
     return(
         <>
@@ -14,9 +17,9 @@ function Home(){
                 <div className='row'>
                     <div className='col-lg-8'>
                         <div className='card'>
-                            <img src={siteIcon} alt="demo" />
+                            <img src={record[num].image} alt={record[num].title}  style={{width:"100%",height:"500px"}}/>
                             <div className='card-img-overlay'>
-                                <h2 className='main-text'>The Sound cloud you loved is doomed</h2>
+                                <h2 className='main-text'>{record[num].title}</h2>
                             </div>
                         </div>
                         
@@ -24,12 +27,12 @@ function Home(){
                     <div className='col-lg-4 d-flex flex-column '>
                         <div className='main-div mb-3'>
                             <div className='main-text'>
-                                <p>The Sound cloud you loved is doomed</p>
+                                <p>{record[first].title}</p>
                             </div>
                         </div>
                         <div className='main-div'>
                             <div className='main-text'>
-                                <p>The Sound cloud you loved is doomed</p>
+                                <p>{record[second].title}</p>
                             </div>
                         </div>
                     </div>
@@ -41,7 +44,7 @@ function Home(){
                 <div className='d-flex justifiy-content-start small-row-column'>
                     {
                         record.slice(0,3).map( (item, index) => <div className='card card mx-2' key={index}>
-                        <img src={siteIcon} alt={item.title} />                        
+                        <img src={item.image} alt={item.title} style={{width:"100%",height:"200px"}}/>                        
                         <div className="card-body">
                             <h4 className="card-title">
                                 <Link to={item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>
@@ -59,12 +62,12 @@ function Home(){
             <div className='container my-3'>
                 <h3>Latest Articles</h3>
                 <div className='row'>
-                    <div className='col-lg-8 d-flex flex-column'>
+                    <div className='col-lg-8 npd-flex flex-column'>
                     {
                         record.slice(0,10).map( (item, index) => <div className='card' key={index}>           
                         <div className='row'>
                             <div className='col-lg-4'>
-                            <img src={siteIcon} className='img-thumbnail' alt={item.title} />                        
+                            <img src={item.image} className='img-thumbnail' alt={item.title} style={{width:"100%",height:"200px"}}/>                        
                             </div>
                             <div className='col-lg-8'>
                                 <div className="card-body">
@@ -90,6 +93,7 @@ function Home(){
                         <h2>Top Posts</h2>
                         <div className='card'>
                             <div className='card-body'>
+                                <img src={record[0].image} className='img-thumbnail' alt={record[0].title} style={{width:"100%",height:"200px"}}/>                                    
                                 <p>{record[0].title}</p>
                             </div>
                         </div>
@@ -116,7 +120,7 @@ function Home(){
                 <div className='d-flex justifiy-content-start small-row-column'>
                 {
                         record.slice(0,3).map( (item, index) => <div className='card mx-2' key={index}>                        
-                        <img src={siteIcon} alt={item.title} />                        
+                        <img src={item.image} className='img-thumbnail' alt={item.title} style={{width:"100%",height:"200px"}}/>                        
                         <div className="card-body">
                             <h4 className="card-title">
                             <Link to={item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>

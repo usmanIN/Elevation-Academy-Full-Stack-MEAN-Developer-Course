@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import siteImage from '../download.jpg';
 import { useParams , Link} from 'react-router-dom';
 import {ContentAPI} from '../context/contentAPI';
 import '../../App.css';
@@ -37,7 +36,7 @@ function Post(){
                     <div className='col-lg-2'></div>                    
                     <div className='col-lg-8'>
                         <h1>{content.title}</h1>            
-                        <img src={siteImage} alt='demo' className='post-image'/>
+                        <img src={content.image} alt={content.title} className='post-image'/>
                         <p>{content.description}</p>                            
                     </div>                        
                     <div className='col-lg-2'></div>
@@ -51,7 +50,7 @@ function Post(){
                                 return (
                                     <div className='card mx-2' key={index}>
                                         <div className='card-body'>
-                                            <img src={siteImage} alt={item.title} style={{width:"100%", height:"50%"}} />
+                                        <img src={item.image} className='img-thumbnail mb-3' alt={item.title} style={{width:"100%",height:"200px"}}/>                        
                                             <h4 className='card-text'>
                                                 <Link to={"/"+item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>
                                             </h4>

@@ -1,14 +1,11 @@
 import React, { useContext } from 'react';
 import {ContentAPI} from '../context/contentAPI';
-import image from '../download.jpg';
 import { useParams , Link} from 'react-router-dom';
 import '../../App.css';
 function List(){
 
     const {topicName} = useParams();
     const [record] = useContext(ContentAPI);
-
-    //record.map( (item) => console.log(item.category.toLowerCase(), topicName) );
     
     return(
         <>
@@ -22,7 +19,7 @@ function List(){
                                     if(item.category.toLowerCase()===topicName.toLowerCase()){
                                         return (<div className='row mb-3' key={index}>
                                             <div className='col-lg-4'>
-                                                <img src={image} alt='demo' />                                    
+                                            <img src={item.image} className='img-thumbnail mb-3' alt={item.title} style={{width:"100%",height:"200px"}}/>                        
                                             </div>
                                             <div className='col-lg-8'>
                                                 <h4>
@@ -47,7 +44,7 @@ function List(){
                                 if(index < 1){
                                     return (<div className='card' key={index}>                        
                                     <div className="card-body">
-                                        <img src={image} style={{width:"100%"}} className='mb-3' alt={item.title} />
+                                    <img src={item.image} className='img-thumbnail mb-3' alt={item.title} style={{width:"100%",height:"200px"}}/>                        
 
                                         <h5 className="card-title">
                                             <Link to={"/"+item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>                     
