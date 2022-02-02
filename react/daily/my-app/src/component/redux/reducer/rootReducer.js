@@ -1,7 +1,5 @@
-import handleCounter from './counterReducer'
+import {handleCounter} from './counterReducer'
 import { combineReducers} from 'redux'
 
 
-export default rootReducer = combineReducers( {
-	handleCounter
-})
+export const rootReducer = combineReducers( {handleCounter})

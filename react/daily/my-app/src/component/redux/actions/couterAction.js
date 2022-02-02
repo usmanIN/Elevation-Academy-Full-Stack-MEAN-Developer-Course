@@ -5,8 +5,8 @@ export const increaseCounter = () =>{
 	}
 }
 
-export const decreseCounter = () =>{
+export const decreaseCounter = () =>{
 	return {
-		type: "Decrese"
+		type: "Decrease"
 	}
 }

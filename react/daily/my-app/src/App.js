@@ -1,11 +1,12 @@
 
 import './App.css';
-import Counter from './component/counter/Counter';
-
+//import Counter from './component/counter/Counter';
+import Reducx from './component/redux/Parent';
 function App() {  
   return (
       <div className="App">
-        <Counter />
+        {/* <Counter /> */}
+        <Reducx />
       </div>  
   );
 }
