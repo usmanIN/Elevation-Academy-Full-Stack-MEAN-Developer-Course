@@ -27,7 +27,7 @@ function Post(){
     const {postName} = useParams();
     let content = record.filter(function(item){ return (item.slug===postName) })[0];
     let similar = record.filter(function(item){ return (item.category.toLowerCase()===content.category.toLowerCase()) });
-    //[Math.floor(Math.random()*similar.length)]);
+    
 
     return(
         <>
@@ -35,24 +35,29 @@ function Post(){
                 <div className='row'>
                     <div className='col-lg-2'></div>                    
                     <div className='col-lg-8'>
-                        <h1>{content.title}</h1>            
+                        <div className='my-4' style={{margin:"10% 0"}}>
+                            <h1>{content.title}</h1>                  
+                            <p className='float-right'>Published on{   content.date}</p>
+                        </div>
+                        
+
                         <img src={content.image} alt={content.title} className='post-image'/>
-                        <p>{content.description}</p>                            
+                        <p className='content-text'>{content.description}</p>                            
                     </div>                        
                     <div className='col-lg-2'></div>
                 </div>      
             </div>
             <div className='mx-auto container'>
-                <h4>More from the siren</h4>
+                <h4 className='my-4'>More from the siren</h4>
                 <div className='d-flex justify-content-start small-row-column'>
                     {
                         shuffle(similar).slice(0,3).map(function(item,index){
                                 return (
-                                    <div className='card mx-2' key={index}>
+                                    <div className='card mx-2 card-list' style={{width:"33.33%"}} key={index}>
                                         <div className='card-body'>
                                         <img src={item.image} className='img-thumbnail mb-3' alt={item.title} style={{width:"100%",height:"200px"}}/>                        
                                             <h4 className='card-text'>
-                                                <Link to={"/"+item.category.toLowerCase()+"/"+item.slug} >{item.title}</Link>
+                                                <Link to={"/"+item.category.toLowerCase()+"/"+item.slug} className='link-item' >{item.title}</Link>
                                             </h4>
                                             <p>{item.description.split(" ").splice(0, 20).join(" ")}</p>
                                         </div>                        
