@@ -11,7 +11,9 @@ const Student = () =>{
     return(
         <>
         <Layout />
-        <div className={style.MainContent}>
+        
+        <div className={style.MainContent}>     
+    
             <table className={style.table}>
                 <thead>
                     <tr>
@@ -19,7 +21,7 @@ const Student = () =>{
                         <th>Age</th>
                         <th>Course</th>
                         <th>Batch</th>
-                        <th>Action</th>
+                        <th><Link to={'add'} className={style.addButton}>Add Student</Link></th>
                     </tr>    
                 </thead>
             <tbody>

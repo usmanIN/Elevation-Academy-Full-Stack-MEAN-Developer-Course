@@ -1,26 +1,22 @@
-.table{    
-    margin-top: 0px;
-    width: 100%;    
+body{
+    background-color: cornflowerblue;
 }
-.table  td, .table th {
-    border: 1px solid black;
-    padding: 8px;
+
+.table{  width: 100%;   background-color: beige; padding: 10px;}
+.table  td, .table th {        
+    padding: 5px 10px;
     text-align: left;
 }
-.table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+.table th {    
     text-align: left;
-    background-color: #04AA6D;
+    background-color:darkslategray;
     color: white;
+    border-radius:   5px;
 }
 
-.table tr:nth-child(even){background-color: #f2f2f2;}
+.table tr:nth-child(even){background-color: darkgrey;}
 
-.area{    margin: 0 10%;    }
-.MainContent{
-    height: 100vh;
-}
+.MainContent{   padding: 0 15%;}
 
 .page{
     display: grid;
@@ -31,20 +27,74 @@
     margin: 0 20px;
 }
 
-.form{    margin-top: 50px;    }
+th:last-child{
+    width: 11%;
+    background: darkred;        
+}
+.addButton{    
+    text-decoration: none;    
+    color: #f2f2f2;
+}
+th:last-child:hover{
+    background: #f2f2f2;
+    background-color: #04AA6D;
+}
+
+.form{    
+    margin: 0 35%; margin-top: 50px;       
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+    padding:20px;
+    background-color: #f2f2f2;
+}
+@media screen and (max-width:780px){
+    
+    .form{    
+        margin: 0 15%;
+    }
+}
+.form h1{
+    color: brown;
+    text-transform: uppercase;
+    
+}
 .form input{   
     margin-bottom: 20px;
-    width: 80%;
+    width: 100%;
     padding: 10px 5px;
     font-size: 14px;
     box-sizing: border-box;
 }
-.form input:last-child{
+.form input[type=submit]{
     background-color: #04AA6D;
     border: none;
     color: #fff;
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.form button{
+    
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #04AA6D;
+    border: none;
+    color: #fff;
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+
+.flex{
+    display: flex;    
+    justify-content: space-between;    
 }
 .form input[type=text] {
     border: 2px solid #04AA6D;
     border-radius: 4px;
   }
+
