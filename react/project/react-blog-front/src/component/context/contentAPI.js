@@ -1281,7 +1281,7 @@ export const Record = (props) => {
 
   ]);
   rows.map((item) =>
-    item.slug = item.title.toLowerCase().split(" ").join("-")
+    item.slug = item.title.toLowerCase().replace(/[^\w\s]+/g,"").split(" ").join("-")
   );
   return (
     <ContentAPI.Provider value={[rows]}>
