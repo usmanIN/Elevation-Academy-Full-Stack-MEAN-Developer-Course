@@ -4,8 +4,8 @@ import ClassComponent from './ClassComponent'
 import './assignment_1.css';
 
 class Assignment_1 extends Component{
-    constructor(props){
-        super(props)
+    constructor(){
+        super();
         this.state = {
             IsFunctional:true,
             IsClass:true

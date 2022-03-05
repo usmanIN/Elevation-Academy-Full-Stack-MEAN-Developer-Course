@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {BrowserRouter,Routes,Route, Navigate} from "react-router-dom";
 
@@ -14,18 +15,20 @@ import EditStudent from './assignment_5/EditStudent';
 import AddStudent from './assignment_5/AddStudent';
 
 
+import Assignment_6  from './assignment_6/Page';
+import StudentList from './assignment_6/Student';
 import PageNotFound from './PageNotFound';
+
 
 const Parent = () =>{    
 
-    let location = window.location.pathname.split("/")[1];
+    //let location = window.location.pathname.split("/")[1];
     
     return(                       
         <>
         
         <DataProvider>
             <BrowserRouter>
-
                 <Routes>
                     <Route exact path='/' element={<Navigate to='/assignment_1'/>} />
                     <Route exact path='/assignment_1' element={<Assignment_1 />} />
@@ -38,6 +41,10 @@ const Parent = () =>{
                     <Route exact path='/assignment_5/student'   element={ <Student /> } />
                     <Route exact path='/assignment_5/student/add'   element={ <AddStudent /> } />
                     <Route exact path='/assignment_5/student/:id'  element={ <EditStudent /> } />
+
+                    <Route exact path='/assignment_6' element={<Assignment_6/>} />        
+                    <Route exact path='/assignment_6/student' element={ <StudentList /> } />                                                                        
+
                     
                     <Route path='/*' element={<PageNotFound />} />                    
                     

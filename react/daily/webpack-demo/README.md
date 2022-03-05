@@ -12,16 +12,11 @@
 // }
 
 
-
-
-
 // npm i --save-dev css-loader
 // npm i --save-dev style-loader
 // npm i --save-dev svg-inline-loader
 
-
 // npm i --save-dev babel-loader
-
 // npm i --save-dev html-webpack-plugin
 
 
