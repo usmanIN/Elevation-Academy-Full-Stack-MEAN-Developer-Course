@@ -1,15 +1,20 @@
 
 import './App.css';
-//import Counter from './component/counter/Counter';
-//import Reducx from './component/redux/Parent';
-import HookComponent from './component/HookComponet/HookComponent';
+// import ReduxParentThree from "./component/redux3/ReduxParentThree";
+// import ReduxTest from "./component/redux3/redux";
+import ReduxStudent from "./component/redux2/student";
 function App() {  
   return (
       <div className="App">
         {/* <Counter /> */}
         {/* <Reducx /> */}
-        <HookComponent />
-      </div>  
+        {/* <HookComponent />*/}
+
+        {/* <ReduxParentThree /> */}
+        {/* <ReduxTest/> */}
+        <ReduxStudent />
+
+     </div>  
   );
 }
 
