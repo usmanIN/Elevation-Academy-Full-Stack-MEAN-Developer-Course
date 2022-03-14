@@ -4,8 +4,6 @@ const app = express();
 const host = "127.0.0.1"
 const port = 4000;
 
-
-
 app.get("/api/content",(request,response) => {
     let result =  "";
     const data = require("./database/posts");
