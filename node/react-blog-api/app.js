@@ -17,5 +17,5 @@ app.get("*",(request,response) => {
 })
 
 app.listen(port, () => {    
-    console.log(`Server running at http://localhost:${port}/`);
+    console.log(`Application has started running successfully at port ${port}`);    
 })
