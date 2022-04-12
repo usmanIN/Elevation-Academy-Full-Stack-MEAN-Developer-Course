@@ -11,7 +11,6 @@ router.get("/", (request, response) =>{
     });
 });
 
-
 router.get('/:category',(request,response) =>{
     const data = require("../database/content");    
     result = data.filter((item) => item.category.toLowerCase() === request.params.category);
