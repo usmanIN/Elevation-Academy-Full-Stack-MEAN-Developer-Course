@@ -100,7 +100,7 @@ module.exports = [
     },
     {
       "id": "10",
-      "image": " /images/bolly2.jpg ",
+      "image": "/images/bolly2.jpg ",
       "title": "Back in Mumbai for a ‘happy interval’",
       "description": "Sonali Bendre returned to Mumbai a few weeks ago after undergoing treatment for cancer in New York City for five months. The actress had shared on Instagram that she has been diagnosed with a high grade cancer that has metastised in July.",
       "category": "BOLLYWOOD",
@@ -163,7 +163,7 @@ module.exports = [
     },
     {
       "id": "32",
-      "image": " /images/bolly2.jpg ",
+      "image": "/images/bolly2.jpg ",
       "title": "Back in Mumbai for a ‘happy interval’ post cancer treatment",
       "description": "Sonali Bendre returned to Mumbai a few weeks ago after undergoing treatment for cancer in New York City for five months. The actress had shared on Instagram that she has been diagnosed with a high grade cancer that has metastised in July.",
       "category": "BOLLYWOOD",
@@ -172,7 +172,7 @@ module.exports = [
     },
     {
       "id": "33",
-      "image": " /images/bolly3.jpg ",
+      "image": "/images/bolly3.jpg ",
       "title": "Anupam Kher reacts to Naseeruddin Shah’s comments: How much more freedom do you need in the country?",
       "description": "Veteran actor Naseeruddin Shah shared his views on mob violence in the country earlier this week and shared that he fears for his children on imagining a situation where they might be surrounded by a mob and will be asked whether they are a Hindu or a Muslim.",
       "category": "BOLLYWOOD",
@@ -181,7 +181,7 @@ module.exports = [
     },
     {
       "id": "34",
-      "image": " /images/bolly4.jpg ",
+      "image": "/images/bolly4.jpg ",
       "title": "Ranveer Singh on working with Arjun Kapoor again: I miss him a lot; Baba’s become too busy for me",
       "description": "Ranveer Singh has been on a promotional spree for his next release, Simmba. Simmba, directed by Rohit Shetty will see Ranveer play the role of a badass cop, Sangram Bhalerao.",
       "category": "BOLLYWOOD",
@@ -217,7 +217,7 @@ module.exports = [
     },
     {
       "id": "38",
-      "image": " /images/bolly8.jpg ",
+      "image": "/images/bolly8.jpg ",
       "title": "Sonakshi Sinha also wants to know why Varun Dhawan called her ‘BHABI’ on Instagram",
       "description": "Sonakshi Sinha and Varun Dhawan are working together in Abhishek Varman’s Kalank. Sonakshi and Varun are also close friends and today, Varun Dhawan left an interesting comment on Sonakshi Sinha’s latest Instagram photo.",
       "category": "BOLLYWOOD",
@@ -253,7 +253,7 @@ module.exports = [
     },
     {
       "id": "42",
-      "image": " /images/bolly2.jpg ",
+      "image": "/images/bolly2.jpg ",
       "title": "Back in Mumbai for a ‘happy interval’ post cancer treatment",
       "description": "Sonali Bendre returned to Mumbai a few weeks ago after undergoing treatment for cancer in New York City for five months. The actress had shared on Instagram that she has been diagnosed with a high grade cancer that has metastised in July. Sonali had shared that a niggling pain led to an unexpected diagnosis. Sonali is back in Mumbai for a ‘happy interval’. Throughout her treatment in New York, Sonali shared uplifting and positive posts on Instagram. Before heading to Mumbai, she had written about coming home, where her heart is.",
       "category": "BOLLYWOOD",
@@ -262,7 +262,7 @@ module.exports = [
     },
     {
       "id": "43",
-      "image": " /images/bolly3.jpg ",
+      "image": "/images/bolly3.jpg ",
       "title": "Anupam Kher reacts to Naseeruddin Shah’s comments: How much more freedom do you need in the country?",
       "description": "Veteran actor Naseeruddin Shah shared his views on mob violence in the country earlier this week and shared that he fears for his children on imagining a situation where they might be surrounded by a mob and will be asked whether they are a Hindu or a Muslim. Naseeruddin Shah made this statement with reference to the killing of a policeman in mob violence in Bulandshahr district of Uttar Pradesh where cow carcasses were found earlier this month. He had said that the ‘poison has already spread..",
       "category": "BOLLYWOOD",
@@ -271,7 +271,7 @@ module.exports = [
     },
     {
       "id": "44",
-      "image": " /images/bolly4.jpg ",
+      "image": "/images/bolly4.jpg ",
       "title": "Ranveer Singh on working with Arjun Kapoor again: I miss him a lot; Baba’s become too busy for me",
       "description": "Ranveer Singh has been on a promotional spree for his next release, Simmba. Simmba, directed by Rohit Shetty will see Ranveer play the role of a badass cop, Sangram Bhalerao. The trailer and the songs of the film has been loved by the audience and it promises to be an entertainer. Sara Ali Khan plays the female lead in the film. Ranveer and Sara promoted the film on Salman Khan’s show Bigg Boss today. Ranveer also connected with his fans on Twitter and answered some questions.",
       "category": "BOLLYWOOD",
@@ -307,7 +307,7 @@ module.exports = [
     },
     {
       "id": "48",
-      "image": " /images/bolly8.jpg ",
+      "image": "/images/bolly8.jpg ",
       "title": "Sonakshi Sinha also wants to know why Varun Dhawan called her ‘BHABI’ on Instagram",
       "description": "Sonakshi Sinha and Varun Dhawan are working together in Abhishek Varman’s Kalank. Sonakshi and Varun are also close friends and today, Varun Dhawan left an interesting comment on Sonakshi Sinha’s latest Instagram photo. Sonakshi shared a stunning photo of herself and captioned it, ‘mirror mirror on the wall’. Varun Dhawan left fans confused by commenting ‘Bhabhi’ on the post. Fans started speculating who Sonakshi Sinha is dating for Varun to call her Bhabhi.",
       "category": "BOLLYWOOD",
@@ -415,7 +415,7 @@ module.exports = [
     },
     {
       "id": "61",
-      "image": " /images/techno2.jpg ",
+      "image": "/images/techno2.jpg ",
       "title": "Techmeme",
       "description": "A foremost source for tracking technology changes. Spotlighting the writings of reporters.",
       "category": "TECHNOLOGY",
@@ -424,7 +424,7 @@ module.exports = [
     },
     {
       "id": "63",
-      "image": " /images/techno3.jpg ",
+      "image": "/images/techno3.jpg ",
       "title": "MIT Technology Review",
       "description": "MIT Technology Review covers articles on Artificial intelligence, Biotechnology, Climate Change, Humans & Technology, Computing, and Space.",
       "category": "TECHNOLOGY",
@@ -433,7 +433,7 @@ module.exports = [
     },
     {
       "id": "64",
-      "image": " /images/techno4.jpg ",
+      "image": "/images/techno4.jpg ",
       "title": "Ars Technica",
       "description": "Ars Technica is a source for technology news, tech policy analysis, breakdowns of the latest scientific advancements.",
       "category": "TECHNOLOGY",
@@ -469,7 +469,7 @@ module.exports = [
     },
     {
       "id": "68",
-      "image": " /images/techno8.jpg ",
+      "image": "/images/techno8.jpg ",
       "title": "WIRED Magazine",
       "description": "WIRED is where tomorrow is realized. You'll get the latest in tech news, science, business, gear, security, and geek culture.",
       "category": "TECHNOLOGY",
@@ -505,7 +505,7 @@ module.exports = [
     },
     {
       "id": "71",
-      "image": " /images/techno2.jpg ",
+      "image": "/images/techno2.jpg ",
       "title": "Techmeme",
       "description": "A foremost source for tracking technology changes. Spotlighting the writings of reporters commentators, and industry players from across the media & industry landscape provides the only effective means of offering a comprehensive view.",
       "category": "TECHNOLOGY",
@@ -514,7 +514,7 @@ module.exports = [
     },
     {
       "id": "73",
-      "image": " /images/techno3.jpg ",
+      "image": "/images/techno3.jpg ",
       "title": "MIT Technology Review",
       "description": "MIT Technology Review covers articles on Artificial intelligence, Biotechnology, Climate Change, Humans & Technology, Computing, and Space. The mission is to bring about better-informed & more conscious decisions about technology through authoritative, influential, and trustworthy journalism.",
       "category": "TECHNOLOGY",
@@ -523,7 +523,7 @@ module.exports = [
     },
     {
       "id": "74",
-      "image": " /images/techno4.jpg ",
+      "image": "/images/techno4.jpg ",
       "title": "Ars Technica",
       "description": "Ars Technica is a source for technology news, tech policy analysis, breakdowns of the latest scientific advancements, gadget reviews, software, hardware, and nearly everything else found in between layers of silicon. Ars Technica has been serving the technologists for more than a decade.",
       "category": "TECHNOLOGY",
@@ -559,7 +559,7 @@ module.exports = [
     },
     {
       "id": "78",
-      "image": " /images/techno8.jpg ",
+      "image": "/images/techno8.jpg ",
       "title": "WIRED Magazine",
       "description": "WIRED is where tomorrow is realized. You'll get the latest in tech news, science, business, gear, security, and geek culture.",
       "category": "TECHNOLOGY",
@@ -667,7 +667,7 @@ module.exports = [
     },
     {
       "id": "92",
-      "image": " /images/holly2.jpg ",
+      "image": "/images/holly2.jpg ",
       "title": "See Julia Fox and Kanye Ye West Stepping Out for a Stylish L.A. Date Night",
       "description": "a flashing lights were on Kanye Ye West and Julia Fox during their date night on Jan. 10. The actress, 31, and the Grammy winner, 44, started their evening at the star-studded...",
       "category": "HOLLYWOOD",
@@ -676,7 +676,7 @@ module.exports = [
     },
     {
       "id": "93",
-      "image": " /images/holly3.jpg ",
+      "image": "/images/holly3.jpg ",
       "title": "How Fez's Fate Was Originally Supposed to Play Out on Euphoria",
       "description": "That iconic scene in Euphoria where Fez breaks a bottle over Nate's head almost didn't happen. In an interview with GQ, published Monday, Jan. 10, Angus Cloud shared that Euphoria....",
       "category": "HOLLYWOOD",
@@ -685,7 +685,7 @@ module.exports = [
     },
     {
       "id": "94",
-      "image": " /images/holly4.jpg ",
+      "image": "/images/holly4.jpg ",
       "title": "Janet Jackson Reveals What Really Pulled Her Through the Storm of Super Bowl Backlash",
       "description": "After receiving widespread scrutiny in the aftermath of her 2004 Super Bowl performance, Janet Jackson recalled leaning into her family and faith. In a new interview with...",
       "category": "HOLLYWOOD",
@@ -721,7 +721,7 @@ module.exports = [
     },
     {
       "id": "98",
-      "image": " /images/holly8.jpg ",
+      "image": "/images/holly8.jpg ",
       "title": "No One Is Innocent in the New Trailer For Uma Thurman's Apple TV+ Series Suspicion",
       "description": "The Apple TV+ series Suspicion is looking like our next big obsession. Uma Thurman stars as Catherine Newman, a prominent American businesswoman, whose son Leo is kidnapped in New York...",
       "category": "HOLLYWOOD",
@@ -757,7 +757,7 @@ module.exports = [
     },
     {
       "id": "102",
-      "image": " /images/holly2.jpg ",
+      "image": "/images/holly2.jpg ",
       "title": "See Julia Fox and Kanye Ye West Stepping Out for a Stylish L.A. Date Night",
       "description": "a flashing lights were on Kanye Ye West and Julia Fox during their date night on Jan. 10. The actress, 31, and the Grammy winner, 44, started their evening at the star-studdeda flashing lights were on Kanye Ye West and Julia Fox during their date night on Jan. 10. The actress, 31, and the Grammy winner, 44, started their evening at the star-studdeda flashing lights were on Kanye Ye West and Julia Fox during their date night on Jan. 10. The actress, 31, and the Grammy winner, 44, started their evening at the star-studded.............",
       "category": "HOLLYWOOD",
@@ -766,7 +766,7 @@ module.exports = [
     },
     {
       "id": "103",
-      "image": " /images/holly3.jpg ",
+      "image": "/images/holly3.jpg ",
       "title": "How Fez's Fate Was Originally Supposed to Play Out on Euphoria",
       "description": "That iconic scene in Euphoria where Fez breaks a bottle over Nate's head almost didn't happen. In an interview with GQ, published Monday, Jan. 10, Angus Cloud shared that Euphoria....That iconic scene in Euphoria where Fez breaks a bottle over Nate's head almost didn't happen. In an interview with GQ, published Monday, Jan. 10, Angus Cloud shared that Euphoria....That iconic scene in Euphoria where Fez breaks a bottle over Nate's head almost didn't happen. In an interview with GQ, published Monday, Jan. 10, Angus Cloud shared that Euphoria....",
       "category": "HOLLYWOOD",
@@ -775,7 +775,7 @@ module.exports = [
     },
     {
       "id": "104",
-      "image": " /images/holly4.jpg ",
+      "image": "/images/holly4.jpg ",
       "title": "Janet Jackson Reveals What Really Pulled Her Through the Storm of Super Bowl Backlash",
       "description": "After receiving widespread scrutiny in the aftermath of her 2004 Super Bowl performance, Janet Jackson recalled leaning into her family and faith. In a new interview with...ade. After receiving widespread scrutiny in the aftermath of her 2004 Super Bowl performance, Janet Jackson recalled leaning into her family and faith. In a new interview with...After receiving widespread scrutiny in the aftermath of her 2004 Super Bowl performance, Janet Jackson recalled leaning into her family and faith. In a new interview with...",
       "category": "HOLLYWOOD",
@@ -811,7 +811,7 @@ module.exports = [
     },
     {
       "id": "108",
-      "image": " /images/holly8.jpg ",
+      "image": "/images/holly8.jpg ",
       "title": "No One Is Innocent in the New Trailer For Uma Thurman's Apple TV+ Series Suspicion",
       "description": "The Apple TV+ series Suspicion is looking like our next big obsession. Uma Thurman stars as Catherine Newman, a prominent American businesswoman, whose son Leo is kidnapped in New York...The Apple TV+ series Suspicion is looking like our next big obsession. Uma Thurman stars as Catherine Newman, a prominent American businesswoman, whose son Leo is kidnapped in New York...The Apple TV+ series Suspicion is looking like our next big obsession. Uma Thurman stars as Catherine Newman, a prominent American businesswoman, whose son Leo is kidnapped in New York....",
       "category": "HOLLYWOOD",
@@ -910,7 +910,7 @@ module.exports = [
     },
     {
       "id": "121",
-      "image": " /images/fit1.jpg ",
+      "image": "/images/fit1.jpg ",
       "title": "Nerd Fitness",
       "description": "A self-described community of “underdogs, misfits, and mutants” ready and willing to help people with every step of their fitness journey,",
       "category": "FITNESS",
@@ -919,7 +919,7 @@ module.exports = [
     },
     {
       "id": "122",
-      "image": " /images/fit2.jpg ",
+      "image": "/images/fit2.jpg ",
       "title": "RossTraining.com",
       "description": "Ross Enamait’s website is dedicated to high performance conditioning, strength, and athletic development. The longtime trainer and boxing coach understands that a successful fitness regimen boils down to finding what works for you.",
       "category": "FITNESS",
@@ -928,7 +928,7 @@ module.exports = [
     },
     {
       "id": "123",
-      "image": " /images/fit3.jpg ",
+      "image": "/images/fit3.jpg ",
       "title": "Love Sweat Fitness",
       "description": "Katie Dunlop’s Love Sweat Fitness community inspires women everywhere to find their own healthy, happy bodies. ",
       "category": "FITNESS",
@@ -937,7 +937,7 @@ module.exports = [
     },
     {
       "id": "124",
-      "image": " /images/fit4.jpg ",
+      "image": "/images/fit4.jpg ",
       "title": "Breaking Muscle",
       "description": "Designed for fitness consumers and professionals, Breaking Muscle is a leading publisher of timely, quality information about all things fitness and nutrition.",
       "category": "FITNESS",
@@ -973,7 +973,7 @@ module.exports = [
     },
     {
       "id": "128",
-      "image": " /images/fit8.jpg ",
+      "image": "/images/fit8.jpg ",
       "title": "The Balanced Life",
       "description": "Like many working women, you may struggle with finding time to exercise and seeing results that will make you want to stick with your workout program. ",
       "category": "FITNESS",
@@ -1000,7 +1000,7 @@ module.exports = [
     },
     {
       "id": "131",
-      "image": " /images/fit2.jpg ",
+      "image": "/images/fit2.jpg ",
       "title": "Nerd Fitness",
       "description": "A self-described community of “underdogs, misfits, and mutants” ready and willing to help people with every step of their fitness journey, Nerd Fitness is a comprehensive resource that’s motivating and inspiring. Sure, they’ll teach you how to work out without a gym and how to prepare a basic meal, but they also focus on helping you fix your own mindset, develop positive habits, and really change your life one step at a time.",
       "category": "FITNESS",
@@ -1018,7 +1018,7 @@ module.exports = [
     },
     {
       "id": "133",
-      "image": " /images/fit3.jpg ",
+      "image": "/images/fit3.jpg ",
       "title": "Love Sweat Fitness",
       "description": "Katie Dunlop’s Love Sweat Fitness community inspires women everywhere to find their own healthy, happy bodies. While the website features daily workouts, recipes, community forums, and much more, the blog is where Katie shares content like her own healthy spring morning routine, the biggest weight loss mistake you may be making, weekly workout schedules, and her latest sweat babe crush.",
       "category": "FITNESS",
@@ -1027,7 +1027,7 @@ module.exports = [
     },
     {
       "id": "134",
-      "image": " /images/fit4.jpg ",
+      "image": "/images/fit4.jpg ",
       "title": "Breaking Muscle",
       "description": "Designed for fitness consumers and professionals, Breaking Muscle is a leading publisher of timely, quality information about all things fitness and nutrition. In addition to countless workouts and recipes, there’s content geared specifically to coaches and trainers. Check out podcasts and thought-provoking posts written by the blog’s coaches in residence.",
       "category": "FITNESS",
@@ -1063,7 +1063,7 @@ module.exports = [
     },
     {
       "id": "138",
-      "image": " /images/fit8.jpg ",
+      "image": "/images/fit8.jpg ",
       "title": "The Balanced Life",
       "description": "Like many working women, you may struggle with finding time to exercise and seeing results that will make you want to stick with your workout program. Here’s where The Balanced Life may help. While you have the option of signing up for a membership with exclusive Pilates videos with the program’s founder, Robin, you can also find a lot of free tips on her blog. Not only will you read about Pilates, but the goal of the blog is to help readers find balance in their lives by fitting in exercise, rather than trying to achieve perfection.",
       "category": "FITNESS",
@@ -1171,7 +1171,7 @@ module.exports = [
     },
     {
       "id": "152",
-      "image": " /images/food2.jpg ",
+      "image": "/images/food2.jpg ",
       "title": "Hot Dog",
       "description": "A hot dog is a food consisting of a grilled or steamed sausage served in the slit of a partially sliced bun. The term hot dog can also refer to the sausage itself. The sausage used is a wiener or a frankfurter.",
       "category": "FOOD",
@@ -1180,7 +1180,7 @@ module.exports = [
     },
     {
       "id": "153",
-      "image": " /images/food3.jpg ",
+      "image": "/images/food3.jpg ",
       "title": "Burger",
       "description": "A hamburger is a food, typically considered a sandwich, consisting of one or more cooked patties, typically aaloo tikki—placed inside a sliced bread roll or bun. The patty may be pan fried, grilled, smoked or flame broiled.",
       "category": "FOOD",
@@ -1189,7 +1189,7 @@ module.exports = [
     },
     {
       "id": "154",
-      "image": " /images/food4.jpg ",
+      "image": "/images/food4.jpg ",
       "title": "Pastries",
       "description": "Pastry is “loved😍” by most people which is made of dough of flour, water and shortening that may be savoury or sweetened. Sweetened pastries are often described as bakers' confectionery. The word pastries suggests many kinds of baked products made from ingredients such as flour, sugar, milk, butter, shortening, baking powder, and eggs.",
       "category": "FOOD",
@@ -1225,7 +1225,7 @@ module.exports = [
     },
     {
       "id": "158",
-      "image": " /images/food8.jpg ",
+      "image": "/images/food8.jpg ",
       "title": "Paneer Tikka",
       "description": "Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a vegetarian alternative to chicken tikka and other meat dishes. It is a popular dish that is widely available in India and countries with an Indian diaspora. ",
       "category": "FOOD",
@@ -1252,7 +1252,7 @@ module.exports = [
     },
     {
       "id": "161",
-      "image": " /images/food1.jpg ",
+      "image": "/images/food1.jpg ",
       "title": "Penne Pasta",
       "description": "Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes. Pastas are divided into two broad categories: dried (pasta secca) and fresh (pasta fresca). Most dried pasta is produced commercially via an extrusion process, although it can be produced at home. Fresh pasta is traditionally produced by hand, sometimes with the aid of simple machines.[3] Fresh pastas available in grocery stores are produced commercially by large-scale machines.",
       "category": "FOOD",
@@ -1270,7 +1270,7 @@ module.exports = [
     },
     {
       "id": "163",
-      "image": " /images/food3.jpg ",
+      "image": "/images/food3.jpg ",
       "title": "Burger",
       "description": "A hamburger is a food, typically considered a sandwich, consisting of one or more cooked patties, typically aaloo tikki—placed inside a sliced bread roll or bun. The patty may be pan fried, grilled, smoked or flame broiled. The term burger can also be applied to the meat patty on its own, especially in the United Kingdom, where the term patty is rarely used, or the term can even refer simply to ground beef. Since the term hamburger usually implies beef, for clarity burger may be prefixed with the type of meat or meat substitute used, as in beef burger, turkey burger, bison burger, portobello burger, or veggie burger.",
       "category": "FOOD",
@@ -1279,7 +1279,7 @@ module.exports = [
     },
     {
       "id": "164",
-      "image": " /images/food4.jpg ",
+      "image": "/images/food4.jpg ",
       "title": "Pastries",
       "description": "Pastry is a dough of flour, water and shortening that may be savoury or sweetened. Sweetened pastries are often described as bakers' confectionery. The word pastries suggests many kinds of baked products made from ingredients such as flour, sugar, milk, butter, shortening, baking powder, and eggs. Pastry can also refer to the pastry dough,[4] from which such baked products are made. Pastry dough is rolled out thinly and used as a base for baked products. Pastry is differentiated from bread by having a higher fat content, which contributes to a flaky or crumbly texture. A good pastry is light and airy and fatty, but firm enough to support the weight of the filling. When making a shortcrust pastry, care must be taken to blend the fat and flour thoroughly before adding any liquid.",
       "category": "FOOD",
@@ -1315,7 +1315,7 @@ module.exports = [
     },
     {
       "id": "168",
-      "image": " /images/food8.jpg ",
+      "image": "/images/food8.jpg ",
       "title": "Paneer Tikka",
       "description": "Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a vegetarian alternative to chicken tikka and other meat dishes. It is a popular dish that is widely available in India and countries with an Indian diaspora. Chunks of paneer, a type of fresh cheese, are marinated in spices and are then arranged on a stick with capsicums (bell peppers), onions and tomatoes. These sticks are grilled in a tandoor and the dish is thereafter served hot, seasoned with lemon juice and chaat masala.[8] It is sometimes accompanied by salad or mint chutney.[9] Tikka dishes traditionally go well with mint chutney.[10] The paneer, though tender, has a crisp singe on the surface. ",
       "category": "FOOD",
