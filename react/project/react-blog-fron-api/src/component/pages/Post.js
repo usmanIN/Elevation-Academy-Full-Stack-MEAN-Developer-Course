@@ -1,6 +1,5 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useParams , Link} from 'react-router-dom';
-// import {ContentAPI} from '../context/contentAPI';
 import '../../App.css';
 import axios from 'axios';
 
@@ -23,11 +22,8 @@ function shuffle(array) {
 
 function Post(){
 
-    // const [record] = useContext(ContentAPI);
     const [record,setRecord] = React.useState([]);
     const [isLoading, setLoading] = React.useState(true);
-   
-    
     const {topicName,postName} = useParams();
 
     React.useEffect(()=>{

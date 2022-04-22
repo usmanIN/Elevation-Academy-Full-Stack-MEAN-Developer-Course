@@ -1,19 +1,16 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import axios  from 'axios';
-// import {ContentAPI} from '../context/contentAPI';
 import { useParams , Link} from 'react-router-dom';
 import '../../App.css';
 function List(){
 
     const {topicName} = useParams();
     
-    // const [record] = useContext(ContentAPI);
     const [record,setRecord] = React.useState([]);
     const [isLoading, setLoading] = React.useState(true);
     
     React.useEffect(() => {
         let url = "https://react-blog-api-project.herokuapp.com";
-        // fetch(url+"api/"+topicName).then(response => response.json()).then(result => console.log(result.data));
         axios.get(url+"/api/"+topicName)        
         .then((response) => {
             let result = response.data;

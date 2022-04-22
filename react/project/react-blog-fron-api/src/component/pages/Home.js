@@ -1,5 +1,4 @@
-import React,{useContext} from 'react';
-// import {ContentAPI} from '../context/contentAPI';
+import React from 'react';
 import { Link} from 'react-router-dom';
 import '../../App.css';
 import imageFirst from '../images/istockphoto.jpg';
@@ -7,7 +6,6 @@ import imageSecond from '../images/maxresdefault.jpg';
 
 
 function Home(){
-    // const [record] = useContext(ContentAPI);
     const [record,setRecord] = React.useState([]);
     const [isLoading, setLoading] = React.useState(true);
     
@@ -16,7 +14,6 @@ function Home(){
         fetch(url+"/api/")
         .then(response => response.json())
         .then(result => {
-            // console.log(result.data);
             result.data.map((item) => {
                 item.image = url + item.image
             });            
@@ -83,12 +80,10 @@ function Home(){
     
                         </div>
                     </div>)
-                    }
-                    
+                    }                    
                 </div>                
             </div>
 
-            {/* Latest Articles */}
             <div className='container my-3'>
                 <h3>Latest Articles</h3>
                 <div className='row'>
