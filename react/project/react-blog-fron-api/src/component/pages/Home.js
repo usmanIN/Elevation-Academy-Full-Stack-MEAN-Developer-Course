@@ -14,10 +14,7 @@ function Home(){
         fetch(url+"/api/")
         .then(response => response.json())
         .then(result => {
-            result.data.map((item) => {
-                item.image = url + item.image
-            });            
-
+            result.data.map((item) =>  item.image = url + item.image);                        
             setRecord(result.data);
             setLoading(false);
         })
@@ -74,6 +71,7 @@ function Home(){
                         <img src={item.image} alt={item.title} style={{width:"100%",height:"200px"}}/>                        
                         <div className="card-body">
                             <h4 className="card-title">
+                                {console.log(item.category)}
                                 <Link to={item.category.toLowerCase()+"/"+item.slug} className='link-item' >{item.title}</Link>
                             </h4>
                             <p className="card-text">{item.description.split(" ").slice(0,30).join(" ")}.</p>                            

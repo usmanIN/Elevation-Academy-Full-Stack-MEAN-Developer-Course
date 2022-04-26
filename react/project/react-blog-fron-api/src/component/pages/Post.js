@@ -31,14 +31,12 @@ function Post(){
         axios.get(url+"/api/"+topicName+"/"+postName)
         .then((response)=>{
             let result = response.data;
-            result.data.map((item) => {
-                item.image = url + item.image; 
-            });            
-            setRecord(result.data);
+            result = result.data.map((item) => item.image = url + item.image );            
+            setRecord(result);
             setLoading(false);
         });
         
-    },[]);
+    },[topicName,postName]);
 
  
     let content = record.filter(function(item){ return (item.slug===postName) })[0];
@@ -50,14 +48,11 @@ function Post(){
         axios.get(url+"/api/"+topicName)
         .then((response)=>{
             let result = response.data;
-            result.data.map((item) => {
-                item.image = url + item.image; 
-            });
-                    
+            result.data.map((item) => item.image = url + item.image);                    
             setSimilar(result.data);            
         });
         
-    },[]);
+    },[topicName]);
 
     similar = similar.filter(function(item){ return (item.category.toLowerCase()===content.category.toLowerCase()) });
     if(isLoading){

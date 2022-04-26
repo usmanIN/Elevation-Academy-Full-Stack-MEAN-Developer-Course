@@ -14,15 +14,11 @@ function List(){
         axios.get(url+"/api/"+topicName)        
         .then((response) => {
             let result = response.data;
-            result.data.map((item) => (
-                item.image = url + item.image
-            ));
-
+            result.data.map((item) => item.image = url + item.image );
             setRecord(result.data);
             setLoading(false);
-        })
-            
-    },[]);
+        });
+    },[topicName]);
     
 
     if(isLoading){
@@ -57,10 +53,11 @@ function List(){
                                                 <p>{item.category} {item.date}</p>
                                             </div>
                                         </div>)                                
+                                    }else{
+                                        return "";
                                     }
-                                    return "";
-                                }
-                                )
+                                    
+                                })
                             }
                             
                         </div>
